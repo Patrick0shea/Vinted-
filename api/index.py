@@ -135,6 +135,7 @@ class VintedScraper:
             if item["price"] < (median_price * discount_threshold):
                 discount_pct = ((median_price - item["price"]) / median_price) * 100
                 item["discount_pct"] = discount_pct
+                item["market_price"] = median_price
                 item["link"] = item['url']
                 deals.append(item)
 
