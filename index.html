@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinted Deal Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Vinted Deals</h1>
+            <p>Live listings > 15% below median market price</p>
+            <div id="status" class="status-badge">Loading deals...</div>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="filterInput" placeholder="Filter results...">
+        </div>
+
+        <div id="deals-grid" class="deals-grid">
+            <!-- Deals will be injected here -->
+        </div>
+
+        <footer>
+            <p>Automated by GitHub Actions | <a href="https://github.com/Patrick0shea/Vinted-">View Repo</a></p>
+        </footer>
+    </div>
+
+    <script>
+        async function loadDeals() {
+            try {
+                const response = await fetch('deals.json');
+                const deals = await response.json();
+                
+                const grid = document.getElementById('deals-grid');
+                const status = document.getElementById('status');
+                
+                grid.innerHTML = '';
+                
+                if (deals.length === 0) {
+                    status.textContent = "No deals found recently.";
+                    return;
+                }
+
+                status.textContent = `Found ${deals.length} active deals`;
+                status.classList.add('success');
+
+                deals.forEach(deal => {
+                    const card = document.createElement('div');
+                    card.className = 'deal-card';
+                    
+                    // Sanitize logic could go here, but taking JSON as trusted for now
+                    const discount = Math.round(deal.discount_pct);
+                    const age = deal.age_hours < 24 ? 
+                        `${deal.age_hours.toFixed(1)}h ago` : 
+                        `${(deal.age_hours/24).toFixed(1)}d ago`;
+
+                    card.innerHTML = `
+                        <div class="card-header">
+                            <span class="brand">${deal.brand || 'Unknown'}</span>
+                            <span class="discount-badge">-${discount}%</span>
+                        </div>
+                        <h3>${deal.title}</h3>
+                        <div class="card-price">
+                            <span class="price">${deal.price} ${deal.currency}</span>
+                            <span class="age">${age}</span>
+                        </div>
+                        <a href="${deal.link}" target="_blank" class="view-btn">View on Vinted</a>
+                    `;
+                    grid.appendChild(card);
+                });
+
+                // Simple filter
+                document.getElementById('filterInput').addEventListener('input', (e) => {
+                    const term = e.target.value.toLowerCase();
+                    const cards = document.querySelectorAll('.deal-card');
+                    
+                    cards.forEach(card => {
+                        const text = card.textContent.toLowerCase();
+                        card.style.display = text.includes(term) ? 'flex' : 'none';
+                    });
+                });
+
+            } catch (error) {
+                console.error('Error loading deals:', error);
+                document.getElementById('status').textContent = "Error loading data.";
+            }
+        }
+
+        loadDeals();
+    </script>
+</body>
+</html>
