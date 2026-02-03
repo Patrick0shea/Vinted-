@@ -7,6 +7,53 @@
     <title>Vinted Deal Finder</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Extra styles for the new filters */
+        .filters-row {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .filter-group label {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            margin-bottom: 5px;
+            margin-left: 5px;
+        }
+
+        select,
+        .filter-group input {
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            font-family: 'Outfit', sans-serif;
+            outline: none;
+        }
+
+        .size-badge {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            color: #e2e8f0;
+        }
+
+        #filterInput {
+            width: 100%;
+            max-width: 500px;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,7 +65,38 @@
         </header>
 
         <div class="search-container">
-            <input type="text" id="filterInput" placeholder="Filter results...">
+            <input type="text" id="filterInput" placeholder="Search items (e.g. Stone Island)...">
+
+            <div class="filters-row">
+                <div class="filter-group">
+                    <label>Max Age</label>
+                    <select id="timeSelect">
+                        <option value="5">Last 5 Hours</option>
+                        <option value="12">Last 12 Hours</option>
+                        <option value="24" selected>Last 24 Hours</option>
+                        <option value="48">Last 2 Days</option>
+                        <option value="0">Any Time</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label>Min Discount</label>
+                    <select id="discountSelect">
+                        <option value="0.90">10% Off</option>
+                        <option value="0.85" selected>15% Off</option>
+                        <option value="0.70">30% Off</option>
+                        <option value="0.50">50% Off</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label>Size</label>
+                    <input type="text" id="sizeInput" placeholder="e.g. M, L, XL" style="width: 100px;">
+                </div>
+            </div>
+
+            <button id="searchBtn" class="view-btn"
+                style="margin-top: 20px; width: 200px; display: inline-block; cursor: pointer;">Find Deals</button>
         </div>
 
         <div id="deals-grid" class="deals-grid">
@@ -26,31 +104,45 @@
         </div>
 
         <footer>
-            <p>Automated by GitHub Actions | <a href="https://github.com/Patrick0shea/Vinted-">View Repo</a></p>
+            <p>Automated by Vercel Functions | <a href="https://github.com/Patrick0shea/Vinted-">View Repo</a></p>
         </footer>
     </div>
 
     <script>
-        async function loadDeals(query = "liverpool jersey", hours = 24, threshold = 0.85) {
+        // Trigger search
+        async function runSearch() {
+            const query = document.getElementById('filterInput').value || "liverpool jersey";
+            const hours = document.getElementById('timeSelect').value;
+            const threshold = document.getElementById('discountSelect').value;
+            const size = document.getElementById('sizeInput').value;
+
+            loadDeals(query, hours, threshold, size);
+        }
+
+        async function loadDeals(query, hours, threshold, size) {
             const grid = document.getElementById('deals-grid');
             const status = document.getElementById('status');
 
-            status.textContent = "Searching Vinted live...";
+            status.textContent = `Searching tickets for "${query}"...`;
             status.className = 'status-badge';
-            grid.innerHTML = ''; // Clear current results
+            grid.innerHTML = '';
 
             try {
-                // Call our new Vercel API
-                const url = `/api/search?q=${encodeURIComponent(query)}&hours=${hours}&threshold=${threshold}`;
+                // Build URL
+                let url = `/api/search?q=${encodeURIComponent(query)}&hours=${hours}&threshold=${threshold}`;
+                if (size && size.trim() !== "") {
+                    url += `&size=${encodeURIComponent(size)}`;
+                }
+
                 const response = await fetch(url);
                 const deals = await response.json();
 
                 if (deals.length === 0) {
-                    status.textContent = "No deals found matching criteria.";
+                    status.textContent = "No deals found. Try relaxing the filters.";
                     return;
                 }
 
-                status.textContent = `Found ${deals.length} active deals for "${query}"`;
+                status.textContent = `Found ${deals.length} active deals`;
                 status.classList.add('success');
 
                 deals.forEach(deal => {
@@ -62,12 +154,17 @@
                         `${deal.age_hours.toFixed(1)}h ago` :
                         `${(deal.age_hours / 24).toFixed(1)}d ago`;
 
+                    const sizeBadge = deal.size ? `<span class="size-badge">${deal.size}</span>` : '';
+
                     card.innerHTML = `
                         <div class="card-header">
                             <span class="brand">${deal.brand || 'Unknown'}</span>
                             <span class="discount-badge">-${discount}%</span>
                         </div>
                         <h3>${deal.title}</h3>
+                        <div class="card-meta" style="margin-bottom: 10px;">
+                            ${sizeBadge}
+                        </div>
                         <div class="card-price">
                             <span class="price">${deal.price} ${deal.currency}</span>
                             <span class="age">${age}</span>
@@ -83,40 +180,17 @@
             }
         }
 
-        // Search Handlers
-        const searchInput = document.getElementById('filterInput');
-        searchInput.placeholder = "Search for item (e.g. Stone Island)...";
+        // Event Listeners
+        document.getElementById('searchBtn').addEventListener('click', runSearch);
 
-        // Add a visible search button for better UX
-        const searchContainer = document.querySelector('.search-container');
-        if (!document.getElementById('searchBtn')) {
-            const btn = document.createElement('button');
-            btn.id = 'searchBtn';
-            btn.textContent = 'Search Live';
-            btn.className = 'view-btn'; // Re-use style
-            btn.style.display = 'inline-block';
-            btn.style.marginLeft = '10px';
-            btn.style.width = 'auto';
-            btn.style.cursor = 'pointer';
-
-            btn.onclick = () => {
-                const q = searchInput.value || "liverpool jersey";
-                loadDeals(q);
-            };
-
-            searchContainer.appendChild(btn);
-        }
-
-        // Allow Enter key
-        searchInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                const q = searchInput.value || "liverpool jersey";
-                loadDeals(q);
-            }
+        document.getElementById('filterInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') runSearch();
         });
 
-        // Initial load
-        loadDeals();
+        // Initialize with check
+        window.onload = () => {
+            // runSearch(); // Optional auto-run
+        };
     </script>
 </body>
 
