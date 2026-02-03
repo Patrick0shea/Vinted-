@@ -19,4 +19,16 @@ python start.py "north face jacket"
 Ask AI put the link to this repo in and the contents of this file
 
 Also downlaod some IDE like VScode or PyCharm
+
+
+Comamnds like
+
+
+python start.py "bohemians jerseys" --hours 10
+
+python start.py "liverpool jerseys"
+
+python start.py "bohemians" --hours 3
+
+
 ```
