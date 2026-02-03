@@ -56,7 +56,7 @@ class VintedScraper:
         except Exception:
             return []
 
-    def analyze_deals(self, items, discount_threshold=0.85, max_hours=0):
+    def analyze_deals(self, items, discount_threshold=0.85, max_hours=0, size_filter=None):
         if not items:
             return []
 
@@ -76,13 +76,14 @@ class VintedScraper:
                 title = item.get("title", "No Title")
                 url = item.get("url", "")
                 brand = item.get("brand_title", "")
-                size_title = item.get("size_title", "").lower()
+                size_title = item.get("size_title", "")
                 
                 # Filter out junior/kids items
                 negative_keywords = ['kids', 'junior', 'jr', 'child', 'boy', 'girl', 'baby', 'toddler', 'age', 'years', 'yrs']
                 title_lower = title.lower()
+                size_lower = size_title.lower()
                 
-                if any(kw in title_lower for kw in negative_keywords) or any(kw in size_title for kw in negative_keywords):
+                if any(kw in title_lower for kw in negative_keywords) or any(kw in size_lower for kw in negative_keywords):
                     continue
 
                 timestamp = 0
@@ -97,6 +98,7 @@ class VintedScraper:
                     parsed_items.append({
                         "title": title,
                         "brand": brand,
+                        "size": size_title,
                         "price": price_val,
                         "currency": currency,
                         "url": url,
@@ -125,6 +127,10 @@ class VintedScraper:
             if max_hours > 0 and item_age_hours > max_hours:
                 continue
 
+            # Size filter check
+            if size_filter and size_filter.strip() and size_filter.lower() not in item['size'].lower():
+                continue
+
             # Price check
             if item["price"] < (median_price * discount_threshold):
                 discount_pct = ((median_price - item["price"]) / median_price) * 100
@@ -150,12 +156,13 @@ def search_handler():
     query = request.args.get('q', 'liverpool jersey')
     hours = float(request.args.get('hours', 0))
     threshold = float(request.args.get('threshold', 0.85))
+    size = request.args.get('size', None)
 
     scraper = VintedScraper(region="co.uk")
     items = scraper.search(query)
     
     if items:
-        deals = scraper.analyze_deals(items, discount_threshold=threshold, max_hours=hours)
+        deals = scraper.analyze_deals(items, discount_threshold=threshold, max_hours=hours, size_filter=size)
         return jsonify(deals)
     
     return jsonify([])
