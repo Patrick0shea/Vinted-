@@ -2,8 +2,21 @@ name: Scrape Vinted Deals
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # Run every 6 hours
-  workflow_dispatch: # Allow manual trigger
+    - cron: '0 */6 * * *' # Run every 6 hours (uses defaults)
+  workflow_dispatch:
+    inputs:
+      query:
+        description: 'Search Query'
+        required: true
+        default: 'liverpool jersey'
+      hours:
+        description: 'Max Age (Hours)'
+        required: false
+        default: '24'
+      threshold:
+        description: 'Discount Threshold (e.g. 0.85)'
+        required: false
+        default: '0.85'
 
 permissions:
   contents: write
@@ -28,8 +41,8 @@ jobs:
 
     - name: Run Scraper
       run: |
-        # Customize your search query here!
-        python start.py "liverpool jersey" --json deals.json --hours 24
+        # Use inputs from the manual trigger
+        python start.py "${{ github.event.inputs.query || 'liverpool jersey' }}" --json deals.json --hours ${{ github.event.inputs.hours || 24 }} --threshold ${{ github.event.inputs.threshold || 0.85 }}
       
     - name: Commit and Push results
       uses: stefanzweifel/git-auto-commit-action@v4
