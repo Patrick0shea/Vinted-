@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -29,33 +31,36 @@
     </div>
 
     <script>
-        async function loadDeals() {
+        async function loadDeals(query = "liverpool jersey", hours = 24, threshold = 0.85) {
+            const grid = document.getElementById('deals-grid');
+            const status = document.getElementById('status');
+
+            status.textContent = "Searching Vinted live...";
+            status.className = 'status-badge';
+            grid.innerHTML = ''; // Clear current results
+
             try {
-                const response = await fetch('deals.json');
+                // Call our new Vercel API
+                const url = `/api/search?q=${encodeURIComponent(query)}&hours=${hours}&threshold=${threshold}`;
+                const response = await fetch(url);
                 const deals = await response.json();
-                
-                const grid = document.getElementById('deals-grid');
-                const status = document.getElementById('status');
-                
-                grid.innerHTML = '';
-                
+
                 if (deals.length === 0) {
-                    status.textContent = "No deals found recently.";
+                    status.textContent = "No deals found matching criteria.";
                     return;
                 }
 
-                status.textContent = `Found ${deals.length} active deals`;
+                status.textContent = `Found ${deals.length} active deals for "${query}"`;
                 status.classList.add('success');
 
                 deals.forEach(deal => {
                     const card = document.createElement('div');
                     card.className = 'deal-card';
-                    
-                    // Sanitize logic could go here, but taking JSON as trusted for now
+
                     const discount = Math.round(deal.discount_pct);
-                    const age = deal.age_hours < 24 ? 
-                        `${deal.age_hours.toFixed(1)}h ago` : 
-                        `${(deal.age_hours/24).toFixed(1)}d ago`;
+                    const age = deal.age_hours < 24 ?
+                        `${deal.age_hours.toFixed(1)}h ago` :
+                        `${(deal.age_hours / 24).toFixed(1)}d ago`;
 
                     card.innerHTML = `
                         <div class="card-header">
@@ -72,24 +77,47 @@
                     grid.appendChild(card);
                 });
 
-                // Simple filter
-                document.getElementById('filterInput').addEventListener('input', (e) => {
-                    const term = e.target.value.toLowerCase();
-                    const cards = document.querySelectorAll('.deal-card');
-                    
-                    cards.forEach(card => {
-                        const text = card.textContent.toLowerCase();
-                        card.style.display = text.includes(term) ? 'flex' : 'none';
-                    });
-                });
-
             } catch (error) {
                 console.error('Error loading deals:', error);
-                document.getElementById('status').textContent = "Error loading data.";
+                status.textContent = "Error connecting to Vinted API.";
             }
         }
 
+        // Search Handlers
+        const searchInput = document.getElementById('filterInput');
+        searchInput.placeholder = "Search for item (e.g. Stone Island)...";
+
+        // Add a visible search button for better UX
+        const searchContainer = document.querySelector('.search-container');
+        if (!document.getElementById('searchBtn')) {
+            const btn = document.createElement('button');
+            btn.id = 'searchBtn';
+            btn.textContent = 'Search Live';
+            btn.className = 'view-btn'; // Re-use style
+            btn.style.display = 'inline-block';
+            btn.style.marginLeft = '10px';
+            btn.style.width = 'auto';
+            btn.style.cursor = 'pointer';
+
+            btn.onclick = () => {
+                const q = searchInput.value || "liverpool jersey";
+                loadDeals(q);
+            };
+
+            searchContainer.appendChild(btn);
+        }
+
+        // Allow Enter key
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                const q = searchInput.value || "liverpool jersey";
+                loadDeals(q);
+            }
+        });
+
+        // Initial load
         loadDeals();
     </script>
 </body>
+
 </html>
