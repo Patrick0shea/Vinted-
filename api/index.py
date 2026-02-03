@@ -137,7 +137,18 @@ class VintedScraper:
 
 # --- API Route ---
 
-@app.route('/api/search', methods=['GET'])
+# Vercel Serverless handles the routing to this file.
+# Depending on configuration, it might strip the prefix or pass it through.
+# We'll listen on multiple paths to be safe.
+
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def catch_all(path):
+    # Route logic manually since Vercel path stripping can be tricky
+    if path == 'api/search' or path == 'search' or request.path.endswith('/search'):
+        return search_handler()
+    return f"API Active. Requested: {path}", 200
+
 def search_handler():
     query = request.args.get('q', 'liverpool jersey')
     hours = float(request.args.get('hours', 0))
