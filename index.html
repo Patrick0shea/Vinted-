@@ -165,11 +165,14 @@
                         <div class="card-meta" style="margin-bottom: 10px;">
                             ${sizeBadge}
                         </div>
-                        <div class="card-price">
-                            <span class="price">${deal.price} ${deal.currency}</span>
-                            <span class="age">${age}</span>
+                        <div class="card-price" style="display:flex; flex-direction:column; align-items:flex-start; gap:5px;">
+                            <div style="display:flex; justify-content:space-between; width:100%; align-items: flex-end;">
+                                <span class="price">${deal.price} ${deal.currency}</span>
+                                <span class="age">${age}</span>
+                            </div>
+                            <span style="font-size: 0.8rem; color: #94a3b8;">Market Avg: ${deal.market_price.toFixed(2)} ${deal.currency}</span>
                         </div>
-                        <a href="${deal.link}" target="_blank" class="view-btn">View on Vinted</a>
+                        <a href="${deal.link}" target="_blank" class="view-btn" style="margin-top: 10px;">View on Vinted</a>
                     `;
                     grid.appendChild(card);
                 });
