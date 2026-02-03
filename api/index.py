@@ -68,10 +68,10 @@ class VintedScraper:
                 price_data = item.get("price", {})
                 if isinstance(price_data, dict):
                     price_val = float(price_data.get("amount", "0"))
-                    currency = price_data.get("currency_code", "GBP")
+                    currency = price_data.get("currency_code", "EUR")
                 else:
                     price_val = float(price_data)
-                    currency = "GBP"
+                    currency = "EUR"
 
                 title = item.get("title", "No Title")
                 url = item.get("url", "")
@@ -159,7 +159,8 @@ def search_handler():
     threshold = float(request.args.get('threshold', 0.85))
     size = request.args.get('size', None)
 
-    scraper = VintedScraper(region="co.uk")
+    # Updated to use Ireland (.ie) as the default region
+    scraper = VintedScraper(region="ie")
     items = scraper.search(query)
     
     if items:
