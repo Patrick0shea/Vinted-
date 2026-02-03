@@ -4,17 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinted Deal Finder</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Vinted Deal Finder - Ireland</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        /* Extra styles for the new filters */
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #38bdf8;
+            --accent-glow: rgba(56, 189, 248, 0.3);
+            --success: #4ade80;
+            --font-main: 'Outfit', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            margin: 0;
+            padding: 20px;
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 40%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-top: 20px;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 2.8rem;
+            margin: 0 0 10px 0;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .status-badge {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 6px 15px;
+            border-radius: 20px;
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+        }
+
+        .status-badge.success {
+            color: var(--success);
+            border-color: rgba(74, 222, 128, 0.2);
+        }
+
+        .search-container {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
         .filters-row {
             display: flex;
             gap: 15px;
             justify-content: center;
             flex-wrap: wrap;
-            margin-top: 15px;
+            margin-top: 20px;
         }
 
         .filter-group {
@@ -24,34 +89,157 @@
         }
 
         .filter-group label {
-            font-size: 0.8rem;
-            color: #94a3b8;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
             margin-bottom: 5px;
             margin-left: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         select,
-        .filter-group input {
-            padding: 10px;
-            border-radius: 10px;
-            background: rgba(30, 41, 59, 0.7);
+        input {
+            padding: 12px 18px;
+            border-radius: 12px;
+            background: #1e293b;
             border: 1px solid rgba(255, 255, 255, 0.1);
             color: white;
-            font-family: 'Outfit', sans-serif;
+            font-family: inherit;
+            font-size: 1rem;
             outline: none;
+            transition: all 0.2s ease;
         }
 
-        .size-badge {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            color: #e2e8f0;
+        input:focus,
+        select:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 10px var(--accent-glow);
         }
 
         #filterInput {
             width: 100%;
             max-width: 500px;
+            font-size: 1.1rem;
+        }
+
+        .view-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #0f172a;
+            text-decoration: none;
+            padding: 14px 30px;
+            border-radius: 12px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-top: 25px;
+        }
+
+        .view-btn:hover {
+            background: #7dd3fc;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(56, 189, 248, 0.4);
+        }
+
+        .deals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .deal-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 18px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+        }
+
+        .deal-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(56, 189, 248, 0.3);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+
+        .brand {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .discount-badge {
+            background: rgba(74, 222, 128, 0.1);
+            color: var(--success);
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-weight: 700;
+        }
+
+        h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 1.4;
+            flex-grow: 1;
+        }
+
+        .size-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .card-price-area {
+            margin: 20px 0;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .main-price-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .price {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .avg-price {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        .age {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        footer {
+            text-align: center;
+            margin: 80px 0 40px 0;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.9rem;
+            color: var(--text-secondary);
         }
     </style>
 </head>
@@ -59,33 +247,33 @@
 <body>
     <div class="container">
         <header>
-            <h1>Vinted Deals v1.2</h1>
-            <p>Live listings > 15% below median market price (Ireland)</p>
-            <div id="status" class="status-badge">Loading deals...</div>
+            <h1>Vinted Ireland v1.3</h1>
+            <p>Scanning Vinted.ie for items > 15% below market price</p>
+            <div id="status" class="status-badge">Ready to scan...</div>
         </header>
 
         <div class="search-container">
-            <input type="text" id="filterInput" placeholder="Search items (e.g. Stone Island)...">
+            <input type="text" id="filterInput" placeholder="Stone Island, Liverpool, Arcteryx...">
 
             <div class="filters-row">
                 <div class="filter-group">
-                    <label>Max Age</label>
+                    <label>Added Within</label>
                     <select id="timeSelect">
-                        <option value="5">Last 5 Hours</option>
-                        <option value="12">Last 12 Hours</option>
-                        <option value="24" selected>Last 24 Hours</option>
-                        <option value="48">Last 2 Days</option>
+                        <option value="5">Past 5 Hours</option>
+                        <option value="12">Past 12 Hours</option>
+                        <option value="24" selected>Past 24 Hours</option>
+                        <option value="48">Past 2 Days</option>
                         <option value="0">Any Time</option>
                     </select>
                 </div>
 
                 <div class="filter-group">
-                    <label>Min Discount</label>
+                    <label>Deal Strength</label>
                     <select id="discountSelect">
                         <option value="0.90">10% Off</option>
-                        <option value="0.85" selected>15% Off</option>
-                        <option value="0.70">30% Off</option>
-                        <option value="0.50">50% Off</option>
+                        <option value="0.85" selected>15% Off (Default)</option>
+                        <option value="0.75">25% Off (Great)</option>
+                        <option value="0.50">50% Off (Steal)</option>
                     </select>
                 </div>
 
@@ -95,40 +283,34 @@
                 </div>
             </div>
 
-            <button id="searchBtn" class="view-btn"
-                style="margin-top: 20px; width: 200px; display: inline-block; cursor: pointer;">Find Deals</button>
+            <button id="searchBtn" class="view-btn">Find Deals</button>
         </div>
 
         <div id="deals-grid" class="deals-grid">
-            <!-- Deals will be injected here -->
+            <!-- Deals will appear here -->
         </div>
 
         <footer>
-            <p>Automated by Vercel Functions | <a href="https://github.com/Patrick0shea/Vinted-">View Repo</a></p>
+            <p>Region: Ireland (€) | Powered by Vercel Functions | <a href="https://github.com/Patrick0shea/Vinted-"
+                    target="_blank">View Repository</a></p>
         </footer>
     </div>
 
     <script>
-        // Trigger search
         async function runSearch() {
             const query = document.getElementById('filterInput').value || "liverpool jersey";
             const hours = document.getElementById('timeSelect').value;
             const threshold = document.getElementById('discountSelect').value;
             const size = document.getElementById('sizeInput').value;
 
-            loadDeals(query, hours, threshold, size);
-        }
-
-        async function loadDeals(query, hours, threshold, size) {
             const grid = document.getElementById('deals-grid');
             const status = document.getElementById('status');
 
-            status.textContent = `Searching tickets for "${query}"...`;
+            status.textContent = `Scanning Vinted.ie for "${query}"...`;
             status.className = 'status-badge';
             grid.innerHTML = '';
 
             try {
-                // Build URL
                 let url = `/api/search?q=${encodeURIComponent(query)}&hours=${hours}&threshold=${threshold}`;
                 if (size && size.trim() !== "") {
                     url += `&size=${encodeURIComponent(size)}`;
@@ -138,7 +320,7 @@
                 const deals = await response.json();
 
                 if (deals.length === 0) {
-                    status.textContent = "No deals found. Try relaxing the filters.";
+                    status.textContent = "No deals found. Try broad search terms or 'Any Time'.";
                     return;
                 }
 
@@ -154,46 +336,39 @@
                         `${deal.age_hours.toFixed(1)}h ago` :
                         `${(deal.age_hours / 24).toFixed(1)}d ago`;
 
-                    const sizeBadge = deal.size ? `<span class="size-badge">${deal.size}</span>` : '';
+                    const sizeTag = deal.size ? `<span class="size-badge">${deal.size}</span>` : '';
 
                     card.innerHTML = `
                         <div class="card-header">
-                            <span class="brand">${deal.brand || 'Unknown'}</span>
+                            <span class="brand">${deal.brand || 'Vinted Item'}</span>
                             <span class="discount-badge">-${discount}%</span>
                         </div>
                         <h3>${deal.title}</h3>
-                        <div class="card-meta" style="margin-bottom: 10px;">
-                            ${sizeBadge}
-                        </div>
-                        <div class="card-price" style="display:flex; flex-direction:column; align-items:flex-start; gap:5px;">
-                            <div style="display:flex; justify-content:space-between; width:100%; align-items: flex-end;">
-                                <span class="price">${deal.price} ${deal.currency}</span>
+                        <div>${sizeTag}</div>
+                        
+                        <div class="card-price-area">
+                            <div class="main-price-row">
+                                <span class="price">€${deal.price}</span>
                                 <span class="age">${age}</span>
                             </div>
-                            <span style="font-size: 0.8rem; color: #94a3b8;">Market Avg: ${deal.market_price.toFixed(2)} ${deal.currency}</span>
+                            <div class="avg-price">Market Average: €${deal.market_price.toFixed(2)}</div>
                         </div>
-                        <a href="${deal.link}" target="_blank" class="view-btn" style="margin-top: 10px;">View on Vinted</a>
+                        
+                        <a href="${deal.link}" target="_blank" class="view-btn">View on Vinted</a>
                     `;
                     grid.appendChild(card);
                 });
 
             } catch (error) {
-                console.error('Error loading deals:', error);
-                status.textContent = "Error connecting to Vinted API.";
+                console.error('Error:', error);
+                status.textContent = "Connection Error. Refresh and try again.";
             }
         }
 
-        // Event Listeners
         document.getElementById('searchBtn').addEventListener('click', runSearch);
-
         document.getElementById('filterInput').addEventListener('keypress', (e) => {
             if (e.key === 'Enter') runSearch();
         });
-
-        // Initialize with check
-        window.onload = () => {
-            // runSearch(); // Optional auto-run
-        };
     </script>
 </body>
 
