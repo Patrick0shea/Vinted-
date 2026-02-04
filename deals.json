@@ -7,8 +7,8 @@
         "url": "https://www.vinted.co.uk/items/8093201695-mens-small-liverpool-home-kit",
         "id": 8093201695,
         "timestamp": 1770138700,
-        "age_hours": 9.019537226690186,
-        "discount_pct": 66.66666666666666,
+        "age_hours": 13.744259999924235,
+        "discount_pct": 68.75,
         "link": "https://www.vinted.co.uk/items/8093201695-mens-small-liverpool-home-kit"
     },
     {
@@ -19,33 +19,9 @@
         "url": "https://www.vinted.co.uk/items/8090845826-liverpool-t-shirt",
         "id": 8090845826,
         "timestamp": 1770122401,
-        "age_hours": 13.547037226690186,
-        "discount_pct": 60.0,
+        "age_hours": 18.271759999924235,
+        "discount_pct": 62.5,
         "link": "https://www.vinted.co.uk/items/8090845826-liverpool-t-shirt"
-    },
-    {
-        "title": "XL NFL Nike genuine Jacksonville jaguars rare legend jersey",
-        "brand": "Nike",
-        "price": 10.0,
-        "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8093340610-xl-nfl-nike-genuine-jacksonville-jaguars-rare-legend-jersey",
-        "id": 8093340610,
-        "timestamp": 1770139695,
-        "age_hours": 8.743148337801298,
-        "discount_pct": 33.33333333333333,
-        "link": "https://www.vinted.co.uk/items/8093340610-xl-nfl-nike-genuine-jacksonville-jaguars-rare-legend-jersey"
-    },
-    {
-        "title": "England jersey (score draw)",
-        "brand": "ENGLAND",
-        "price": 10.0,
-        "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8095161770-england-jersey-score-draw",
-        "id": 8095161770,
-        "timestamp": 1770154107,
-        "age_hours": 4.739815004467964,
-        "discount_pct": 33.33333333333333,
-        "link": "https://www.vinted.co.uk/items/8095161770-england-jersey-score-draw"
     },
     {
         "title": "19/20 Liverpool Home Shirt",
@@ -55,20 +31,8 @@
         "url": "https://www.vinted.co.uk/items/8095484896-1920-liverpool-home-shirt",
         "id": 8095484896,
         "timestamp": 1770158997,
-        "age_hours": 3.381481671134631,
-        "discount_pct": 33.33333333333333,
+        "age_hours": 8.10620444436868,
+        "discount_pct": 37.5,
         "link": "https://www.vinted.co.uk/items/8095484896-1920-liverpool-home-shirt"
-    },
-    {
-        "title": "Red Bull Racing Jersey",
-        "brand": "Red Bull",
-        "price": 12.0,
-        "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8095054798-red-bull-racing-jersey",
-        "id": 8095054798,
-        "timestamp": 1770152999,
-        "age_hours": 5.047592782245742,
-        "discount_pct": 20.0,
-        "link": "https://www.vinted.co.uk/items/8095054798-red-bull-racing-jersey"
     }
 ]
