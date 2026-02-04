@@ -1,5 +1,29 @@
 [
     {
+        "title": "liverpool top",
+        "brand": "Liverpool",
+        "price": 3.5,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8097630436-liverpool-top",
+        "id": 8097630436,
+        "timestamp": 1770206593,
+        "age_hours": 1.02563008957439,
+        "discount_pct": 76.66666666666667,
+        "link": "https://www.vinted.co.uk/items/8097630436-liverpool-top"
+    },
+    {
+        "title": "Liverpool Shirt",
+        "brand": "Liverpool",
+        "price": 5.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8096243703-liverpool-shirt",
+        "id": 8096243703,
+        "timestamp": 1770195408,
+        "age_hours": 4.1325745340188345,
+        "discount_pct": 66.66666666666666,
+        "link": "https://www.vinted.co.uk/items/8096243703-liverpool-shirt"
+    },
+    {
         "title": "men\u2019s small liverpool home kit",
         "brand": "Liverpool",
         "price": 5.0,
@@ -7,32 +31,20 @@
         "url": "https://www.vinted.co.uk/items/8093201695-mens-small-liverpool-home-kit",
         "id": 8093201695,
         "timestamp": 1770138700,
-        "age_hours": 13.744259999924235,
-        "discount_pct": 68.75,
+        "age_hours": 19.884796756241055,
+        "discount_pct": 66.66666666666666,
         "link": "https://www.vinted.co.uk/items/8093201695-mens-small-liverpool-home-kit"
     },
     {
-        "title": "Liverpool t shirt",
-        "brand": "Liverpool",
-        "price": 6.0,
-        "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8090845826-liverpool-t-shirt",
-        "id": 8090845826,
-        "timestamp": 1770122401,
-        "age_hours": 18.271759999924235,
-        "discount_pct": 62.5,
-        "link": "https://www.vinted.co.uk/items/8090845826-liverpool-t-shirt"
-    },
-    {
-        "title": "19/20 Liverpool Home Shirt",
+        "title": "Liverpool FC Football Top 4 XL",
         "brand": "Liverpool",
         "price": 10.0,
         "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8095484896-1920-liverpool-home-shirt",
-        "id": 8095484896,
-        "timestamp": 1770158997,
-        "age_hours": 8.10620444436868,
-        "discount_pct": 37.5,
-        "link": "https://www.vinted.co.uk/items/8095484896-1920-liverpool-home-shirt"
+        "url": "https://www.vinted.co.uk/items/8097255097-liverpool-fc-football-top-4-xl",
+        "id": 8097255097,
+        "timestamp": 1770203773,
+        "age_hours": 1.8089634229077234,
+        "discount_pct": 33.33333333333333,
+        "link": "https://www.vinted.co.uk/items/8097255097-liverpool-fc-football-top-4-xl"
     }
 ]
