@@ -1,1 +1,74 @@
-[]
+[
+    {
+        "title": "Stradivarius Football Jersey",
+        "brand": "Stradivarius",
+        "price": 3.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8098199957-stradivarius-football-jersey",
+        "id": 8098199957,
+        "timestamp": 1770210618,
+        "age_hours": 17.864386805362173,
+        "discount_pct": 80.0,
+        "link": "https://www.vinted.co.uk/items/8098199957-stradivarius-football-jersey"
+    },
+    {
+        "title": "Authentic Liverpool Women\u2019s size Large Football Shirt Darwin Nunez",
+        "brand": "Liverpool",
+        "price": 5.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8102233155-authentic-liverpool-womens-size-large-football-shirt-darwin-nunez",
+        "id": 8102233155,
+        "timestamp": 1770238985,
+        "age_hours": 9.98466458313995,
+        "discount_pct": 66.66666666666666,
+        "link": "https://www.vinted.co.uk/items/8102233155-authentic-liverpool-womens-size-large-football-shirt-darwin-nunez"
+    },
+    {
+        "title": "Liverpool Shirt",
+        "brand": "Liverpool",
+        "price": 5.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8096243703-liverpool-shirt",
+        "id": 8096243703,
+        "timestamp": 1770195408,
+        "age_hours": 22.08938680536217,
+        "discount_pct": 66.66666666666666,
+        "link": "https://www.vinted.co.uk/items/8096243703-liverpool-shirt"
+    },
+    {
+        "title": "Liverpool fc shirt",
+        "brand": "Liverpool",
+        "price": 6.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8097737981-liverpool-fc-shirt",
+        "id": 8097737981,
+        "timestamp": 1770207391,
+        "age_hours": 18.76077569425106,
+        "discount_pct": 60.0,
+        "link": "https://www.vinted.co.uk/items/8097737981-liverpool-fc-shirt"
+    },
+    {
+        "title": "New oversize lounge suit",
+        "brand": "No Label",
+        "price": 8.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8101246900-new-oversize-lounge-suit",
+        "id": 8101246900,
+        "timestamp": 1770231092,
+        "age_hours": 12.17716458313995,
+        "discount_pct": 46.666666666666664,
+        "link": "https://www.vinted.co.uk/items/8101246900-new-oversize-lounge-suit"
+    },
+    {
+        "title": "Liverpool Training T shirt",
+        "brand": "Liverpool",
+        "price": 8.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8098733556-liverpool-training-t-shirt",
+        "id": 8098733556,
+        "timestamp": 1770214128,
+        "age_hours": 16.88938680536217,
+        "discount_pct": 46.666666666666664,
+        "link": "https://www.vinted.co.uk/items/8098733556-liverpool-training-t-shirt"
+    }
+]
