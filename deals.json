@@ -1,15 +1,15 @@
 [
     {
-        "title": "Liverpool t shirt",
-        "brand": "Liverpool",
-        "price": 3.0,
+        "title": "Comfy jersey material wide leg trousers",
+        "brand": "Matalan",
+        "price": 5.0,
         "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8109686143-liverpool-t-shirt",
-        "id": 8109686143,
-        "timestamp": 1770335872,
-        "age_hours": 7.005927620463901,
-        "discount_pct": 81.81818181818183,
-        "link": "https://www.vinted.co.uk/items/8109686143-liverpool-t-shirt"
+        "url": "https://www.vinted.co.uk/items/8111013424-comfy-jersey-material-wide-leg-trousers",
+        "id": 8111013424,
+        "timestamp": 1770374427,
+        "age_hours": 2.403867410487599,
+        "discount_pct": 66.66666666666666,
+        "link": "https://www.vinted.co.uk/items/8111013424-comfy-jersey-material-wide-leg-trousers"
     },
     {
         "title": "Liverpool FC 21/22",
@@ -19,20 +19,32 @@
         "url": "https://www.vinted.co.uk/items/8105814524-liverpool-fc-2122",
         "id": 8105814524,
         "timestamp": 1770300621,
-        "age_hours": 16.797872064908347,
-        "discount_pct": 63.63636363636363,
+        "age_hours": 22.905534077154265,
+        "discount_pct": 60.0,
         "link": "https://www.vinted.co.uk/items/8105814524-liverpool-fc-2122"
     },
     {
-        "title": "Liverpool Football Club Home Shirt 1978/80 (Retro) Remake",
+        "title": "Liverpool training 1/4 zip size S",
         "brand": "Liverpool",
-        "price": 11.0,
+        "price": 6.0,
         "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8108330229-liverpool-football-club-home-shirt-197880-retro-remake",
-        "id": 8108330229,
-        "timestamp": 1770318884,
-        "age_hours": 11.72481650935279,
+        "url": "https://www.vinted.co.uk/items/8110554253-liverpool-training-14-zip-size-s",
+        "id": 8110554253,
+        "timestamp": 1770370550,
+        "age_hours": 3.4808118549320435,
+        "discount_pct": 60.0,
+        "link": "https://www.vinted.co.uk/items/8110554253-liverpool-training-14-zip-size-s"
+    },
+    {
+        "title": "Liverpool shirt chiesa",
+        "brand": "Liverpool",
+        "price": 10.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8111087715-liverpool-shirt-chiesa",
+        "id": 8111087715,
+        "timestamp": 1770375016,
+        "age_hours": 2.2402562993764876,
         "discount_pct": 33.33333333333333,
-        "link": "https://www.vinted.co.uk/items/8108330229-liverpool-football-club-home-shirt-197880-retro-remake"
+        "link": "https://www.vinted.co.uk/items/8111087715-liverpool-shirt-chiesa"
     }
 ]
