@@ -1,15 +1,27 @@
 [
     {
-        "title": "NFL SF59ers Jersey",
-        "brand": "NFL",
-        "price": 9.0,
+        "title": "Liverpool t shirt",
+        "brand": "Liverpool",
+        "price": 3.0,
         "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8106979002-nfl-sf59ers-jersey",
-        "id": 8106979002,
-        "timestamp": 1770308827,
-        "age_hours": 9.913435760471556,
-        "discount_pct": 50.0,
-        "link": "https://www.vinted.co.uk/items/8106979002-nfl-sf59ers-jersey"
+        "url": "https://www.vinted.co.uk/items/8109686143-liverpool-t-shirt",
+        "id": 8109686143,
+        "timestamp": 1770335872,
+        "age_hours": 7.005927620463901,
+        "discount_pct": 81.81818181818183,
+        "link": "https://www.vinted.co.uk/items/8109686143-liverpool-t-shirt"
+    },
+    {
+        "title": "Liverpool FC 21/22",
+        "brand": "Liverpool",
+        "price": 6.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8105814524-liverpool-fc-2122",
+        "id": 8105814524,
+        "timestamp": 1770300621,
+        "age_hours": 16.797872064908347,
+        "discount_pct": 63.63636363636363,
+        "link": "https://www.vinted.co.uk/items/8105814524-liverpool-fc-2122"
     },
     {
         "title": "Liverpool Football Club Home Shirt 1978/80 (Retro) Remake",
@@ -19,20 +31,8 @@
         "url": "https://www.vinted.co.uk/items/8108330229-liverpool-football-club-home-shirt-197880-retro-remake",
         "id": 8108330229,
         "timestamp": 1770318884,
-        "age_hours": 7.119824649360445,
-        "discount_pct": 38.88888888888889,
+        "age_hours": 11.72481650935279,
+        "discount_pct": 33.33333333333333,
         "link": "https://www.vinted.co.uk/items/8108330229-liverpool-football-club-home-shirt-197880-retro-remake"
-    },
-    {
-        "title": "Liverpool football club shirt",
-        "brand": "Liverpool",
-        "price": 15.0,
-        "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8102370473-liverpool-football-club-shirt",
-        "id": 8102370473,
-        "timestamp": 1770301212,
-        "age_hours": 12.028713538249333,
-        "discount_pct": 16.666666666666664,
-        "link": "https://www.vinted.co.uk/items/8102370473-liverpool-football-club-shirt"
     }
 ]
