@@ -1,27 +1,15 @@
 [
     {
-        "title": "Comfy jersey material wide leg trousers",
-        "brand": "Matalan",
-        "price": 5.0,
-        "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8111013424-comfy-jersey-material-wide-leg-trousers",
-        "id": 8111013424,
-        "timestamp": 1770374427,
-        "age_hours": 2.403867410487599,
-        "discount_pct": 66.66666666666666,
-        "link": "https://www.vinted.co.uk/items/8111013424-comfy-jersey-material-wide-leg-trousers"
-    },
-    {
-        "title": "Liverpool FC 21/22",
+        "title": "Liverpool 2022 - 2023 top m adults",
         "brand": "Liverpool",
-        "price": 6.0,
+        "price": 3.5,
         "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8105814524-liverpool-fc-2122",
-        "id": 8105814524,
-        "timestamp": 1770300621,
-        "age_hours": 22.905534077154265,
-        "discount_pct": 60.0,
-        "link": "https://www.vinted.co.uk/items/8105814524-liverpool-fc-2122"
+        "url": "https://www.vinted.co.uk/items/8114787850-liverpool-2022-2023-top-m-adults",
+        "id": 8114787850,
+        "timestamp": 1770399660,
+        "age_hours": 1.2284677557150523,
+        "discount_pct": 80.55555555555556,
+        "link": "https://www.vinted.co.uk/items/8114787850-liverpool-2022-2023-top-m-adults"
     },
     {
         "title": "Liverpool training 1/4 zip size S",
@@ -31,8 +19,8 @@
         "url": "https://www.vinted.co.uk/items/8110554253-liverpool-training-14-zip-size-s",
         "id": 8110554253,
         "timestamp": 1770370550,
-        "age_hours": 3.4808118549320435,
-        "discount_pct": 60.0,
+        "age_hours": 9.314578866826164,
+        "discount_pct": 66.66666666666666,
         "link": "https://www.vinted.co.uk/items/8110554253-liverpool-training-14-zip-size-s"
     },
     {
@@ -43,8 +31,20 @@
         "url": "https://www.vinted.co.uk/items/8111087715-liverpool-shirt-chiesa",
         "id": 8111087715,
         "timestamp": 1770375016,
-        "age_hours": 2.2402562993764876,
-        "discount_pct": 33.33333333333333,
+        "age_hours": 8.074023311270608,
+        "discount_pct": 44.44444444444444,
         "link": "https://www.vinted.co.uk/items/8111087715-liverpool-shirt-chiesa"
+    },
+    {
+        "title": "LFC Home 21/22",
+        "brand": "Liverpool",
+        "price": 12.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8112675513-lfc-home-2122",
+        "id": 8112675513,
+        "timestamp": 1770386858,
+        "age_hours": 4.7845788668261635,
+        "discount_pct": 33.33333333333333,
+        "link": "https://www.vinted.co.uk/items/8112675513-lfc-home-2122"
     }
 ]
