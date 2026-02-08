@@ -1,29 +1,5 @@
 [
     {
-        "title": "Miss selfridge stripe full midi skirt",
-        "brand": "Miss Selfridge",
-        "price": 3.0,
-        "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8119871835-miss-selfridge-stripe-full-midi-skirt",
-        "id": 8119871835,
-        "timestamp": 1770469959,
-        "age_hours": 5.433443746036954,
-        "discount_pct": 79.91295614328757,
-        "link": "https://www.vinted.co.uk/items/8119871835-miss-selfridge-stripe-full-midi-skirt"
-    },
-    {
-        "title": "Liverpool training top",
-        "brand": "Liverpool",
-        "price": 3.5,
-        "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8121683392-liverpool-training-top",
-        "id": 8121683392,
-        "timestamp": 1770479364,
-        "age_hours": 2.8209437460369533,
-        "discount_pct": 76.56511550050217,
-        "link": "https://www.vinted.co.uk/items/8121683392-liverpool-training-top"
-    },
-    {
         "title": "Liverpool FC Jersey",
         "brand": "Liverpool",
         "price": 5.0,
@@ -31,57 +7,33 @@
         "url": "https://www.vinted.co.uk/items/8120577566-liverpool-fc-jersey",
         "id": 8120577566,
         "timestamp": 1770473657,
-        "age_hours": 4.4062215238147315,
+        "age_hours": 12.4849505389399,
         "discount_pct": 66.52159357214596,
         "link": "https://www.vinted.co.uk/items/8120577566-liverpool-fc-jersey"
     },
     {
         "title": "Liverpool shirt",
         "brand": "Liverpool",
-        "price": 5.0,
-        "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8120738363-liverpool-shirt",
-        "id": 8120738363,
-        "timestamp": 1770474489,
-        "age_hours": 4.17511041270362,
-        "discount_pct": 66.52159357214596,
-        "link": "https://www.vinted.co.uk/items/8120738363-liverpool-shirt"
-    },
-    {
-        "title": "Liverpool red home shirt 23/24 season",
-        "brand": "Liverpool",
-        "price": 6.0,
-        "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8115528742-liverpool-red-home-shirt-2324-season",
-        "id": 8115528742,
-        "timestamp": 1770405721,
-        "age_hours": 23.27733263492584,
-        "discount_pct": 59.825912286575154,
-        "link": "https://www.vinted.co.uk/items/8115528742-liverpool-red-home-shirt-2324-season"
-    },
-    {
-        "title": "Liverpool Jersey",
-        "brand": "Nike",
-        "price": 7.99,
-        "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8116238906-liverpool-jersey",
-        "id": 8116238906,
-        "timestamp": 1770412449,
-        "age_hours": 21.408443746036955,
-        "discount_pct": 46.50150652828925,
-        "link": "https://www.vinted.co.uk/items/8116238906-liverpool-jersey"
-    },
-    {
-        "title": "liverpool shirt",
-        "brand": "Liverpool",
         "price": 10.0,
         "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8121408113-liverpool-shirt",
-        "id": 8121408113,
-        "timestamp": 1770477942,
-        "age_hours": 3.2159437460369533,
+        "url": "https://www.vinted.co.uk/items/8120936212-liverpool-shirt",
+        "id": 8120936212,
+        "timestamp": 1770475505,
+        "age_hours": 11.971617205606567,
         "discount_pct": 33.04318714429193,
-        "link": "https://www.vinted.co.uk/items/8121408113-liverpool-shirt"
+        "link": "https://www.vinted.co.uk/items/8120936212-liverpool-shirt"
+    },
+    {
+        "title": "Liverpool Fc shirt",
+        "brand": "Liverpool",
+        "price": 12.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8124982224-liverpool-fc-shirt",
+        "id": 8124982224,
+        "timestamp": 1770510971,
+        "age_hours": 2.1199505389399,
+        "discount_pct": 19.65182457315031,
+        "link": "https://www.vinted.co.uk/items/8124982224-liverpool-fc-shirt"
     },
     {
         "title": "Liverpool",
@@ -91,8 +43,20 @@
         "url": "https://www.vinted.co.uk/items/8119298892-liverpool",
         "id": 8119298892,
         "timestamp": 1770466780,
-        "age_hours": 6.316499301592509,
+        "age_hours": 14.395228316717677,
         "discount_pct": 19.65182457315031,
         "link": "https://www.vinted.co.uk/items/8119298892-liverpool"
+    },
+    {
+        "title": "liverpool \u2018van dijk\u2019 24/25 third jersey - size s",
+        "brand": "Liverpool",
+        "price": 12.59,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8124795929-liverpool-van-dijk-2425-third-jersey-size-s",
+        "id": 8124795929,
+        "timestamp": 1770504738,
+        "age_hours": 3.8513394278287887,
+        "discount_pct": 15.701372614663537,
+        "link": "https://www.vinted.co.uk/items/8124795929-liverpool-van-dijk-2425-third-jersey-size-s"
     }
 ]
