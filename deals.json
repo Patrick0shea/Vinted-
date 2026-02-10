@@ -1,86 +1,38 @@
 [
     {
-        "title": "New balance",
-        "brand": "New Balance",
-        "price": 1.8,
-        "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8139552746-new-balance",
-        "id": 8139552746,
-        "timestamp": 1770656877,
-        "age_hours": 2.0693119799428517,
-        "discount_pct": 89.40553266627428,
-        "link": "https://www.vinted.co.uk/items/8139552746-new-balance"
-    },
-    {
-        "title": "Liverpool jersey",
-        "brand": "Liverpool",
-        "price": 7.0,
-        "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8134717918-liverpool-jersey",
-        "id": 8134717918,
-        "timestamp": 1770590695,
-        "age_hours": 20.45320086883174,
-        "discount_pct": 58.79929370217775,
-        "link": "https://www.vinted.co.uk/items/8134717918-liverpool-jersey"
-    },
-    {
-        "title": "Women\u2019s Liverpool football shirt",
-        "brand": "Liverpool",
-        "price": 8.0,
-        "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8133602474-womens-liverpool-football-shirt",
-        "id": 8133602474,
-        "timestamp": 1770580014,
-        "age_hours": 23.420145313276183,
-        "discount_pct": 52.91347851677457,
-        "link": "https://www.vinted.co.uk/items/8133602474-womens-liverpool-football-shirt"
-    },
-    {
-        "title": "LFC Liverpool Football Club Top Womens",
+        "title": "Liverpool top size large No 20 Jota on back",
         "brand": "Liverpool",
         "price": 10.0,
         "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8134455599-lfc-liverpool-football-club-top-womens",
-        "id": 8134455599,
-        "timestamp": 1770586842,
-        "age_hours": 21.52347864660952,
-        "discount_pct": 41.14184814596821,
-        "link": "https://www.vinted.co.uk/items/8134455599-lfc-liverpool-football-club-top-womens"
+        "url": "https://www.vinted.co.uk/items/8140942235-liverpool-top-size-large-no-20-jota-on-back",
+        "id": 8140942235,
+        "timestamp": 1770666831,
+        "age_hours": 9.977919101052814,
+        "discount_pct": 35.483870967741936,
+        "link": "https://www.vinted.co.uk/items/8140942235-liverpool-top-size-large-no-20-jota-on-back"
     },
     {
-        "title": "Chelsea Peers pj\u2019s set",
-        "brand": "Chelsea Peers",
-        "price": 10.0,
-        "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8139624678-chelsea-peers-pjs-set",
-        "id": 8139624678,
-        "timestamp": 1770657366,
-        "age_hours": 1.9334786466095182,
-        "discount_pct": 41.14184814596821,
-        "link": "https://www.vinted.co.uk/items/8139624678-chelsea-peers-pjs-set"
-    },
-    {
-        "title": "Liverpool training kit",
+        "title": "Liverpool top size small",
         "brand": "Liverpool",
         "price": 10.0,
         "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8134039973-liverpool-training-kit",
-        "id": 8134039973,
-        "timestamp": 1770583107,
-        "age_hours": 22.560978646609517,
-        "discount_pct": 41.14184814596821,
-        "link": "https://www.vinted.co.uk/items/8134039973-liverpool-training-kit"
+        "url": "https://www.vinted.co.uk/items/8141398019-liverpool-top-size-small",
+        "id": 8141398019,
+        "timestamp": 1770670477,
+        "age_hours": 8.965141323275036,
+        "discount_pct": 35.483870967741936,
+        "link": "https://www.vinted.co.uk/items/8141398019-liverpool-top-size-small"
     },
     {
-        "title": "Liverpool shirt",
+        "title": "M.Salah Liverpool shirt",
         "brand": "Liverpool",
         "price": 12.0,
         "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8134541581-liverpool-shirt",
-        "id": 8134541581,
-        "timestamp": 1770587887,
-        "age_hours": 21.23320086883174,
-        "discount_pct": 29.370217775161855,
-        "link": "https://www.vinted.co.uk/items/8134541581-liverpool-shirt"
+        "url": "https://www.vinted.co.uk/items/8140626321-msalah-liverpool-shirt",
+        "id": 8140626321,
+        "timestamp": 1770664502,
+        "age_hours": 10.62486354549726,
+        "discount_pct": 22.58064516129032,
+        "link": "https://www.vinted.co.uk/items/8140626321-msalah-liverpool-shirt"
     }
 ]
