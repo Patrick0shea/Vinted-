@@ -1,5 +1,41 @@
 [
     {
+        "title": "Liverpool 22/23 top",
+        "brand": "Liverpool",
+        "price": 5.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8146197884-liverpool-2223-top",
+        "id": 8146197884,
+        "timestamp": 1770740128,
+        "age_hours": 2.870974061422878,
+        "discount_pct": 66.66666666666666,
+        "link": "https://www.vinted.co.uk/items/8146197884-liverpool-2223-top"
+    },
+    {
+        "title": "Liverpool training top teal very good condition",
+        "brand": "Liverpool",
+        "price": 9.5,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8145619988-liverpool-training-top-teal-very-good-condition",
+        "id": 8145619988,
+        "timestamp": 1770736126,
+        "age_hours": 3.9826407280895446,
+        "discount_pct": 36.666666666666664,
+        "link": "https://www.vinted.co.uk/items/8145619988-liverpool-training-top-teal-very-good-condition"
+    },
+    {
+        "title": "liverpool home football shirt 2020/2021",
+        "brand": "Liverpool",
+        "price": 10.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8147642010-liverpool-home-football-shirt-20202021",
+        "id": 8147642010,
+        "timestamp": 1770750350,
+        "age_hours": 0.0315296169784334,
+        "discount_pct": 33.33333333333333,
+        "link": "https://www.vinted.co.uk/items/8147642010-liverpool-home-football-shirt-20202021"
+    },
+    {
         "title": "Liverpool top size large No 20 Jota on back",
         "brand": "Liverpool",
         "price": 10.0,
@@ -7,20 +43,20 @@
         "url": "https://www.vinted.co.uk/items/8140942235-liverpool-top-size-large-no-20-jota-on-back",
         "id": 8140942235,
         "timestamp": 1770666831,
-        "age_hours": 17.42348450150755,
+        "age_hours": 23.231251839200656,
         "discount_pct": 33.33333333333333,
         "link": "https://www.vinted.co.uk/items/8140942235-liverpool-top-size-large-no-20-jota-on-back"
     },
     {
-        "title": "Boston Red Sox jersey",
-        "brand": "MLB",
-        "price": 11.0,
+        "title": "Liverpool retro top",
+        "brand": "Liverpool",
+        "price": 12.0,
         "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8142453167-boston-red-sox-jersey",
-        "id": 8142453167,
-        "timestamp": 1770710548,
-        "age_hours": 5.279873390396436,
-        "discount_pct": 26.666666666666668,
-        "link": "https://www.vinted.co.uk/items/8142453167-boston-red-sox-jersey"
+        "url": "https://www.vinted.co.uk/items/8145535767-liverpool-retro-top",
+        "id": 8145535767,
+        "timestamp": 1770735551,
+        "age_hours": 4.1423629503117665,
+        "discount_pct": 20.0,
+        "link": "https://www.vinted.co.uk/items/8145535767-liverpool-retro-top"
     }
 ]
