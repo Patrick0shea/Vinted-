@@ -1,5 +1,17 @@
 [
     {
+        "title": "Shein Football Jersey - M",
+        "brand": "Shein",
+        "price": 1.5,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8152453791-shein-football-jersey-m",
+        "id": 8152453791,
+        "timestamp": 1770820133,
+        "age_hours": 4.621052133573426,
+        "discount_pct": 89.28571428571429,
+        "link": "https://www.vinted.co.uk/items/8152453791-shein-football-jersey-m"
+    },
+    {
         "title": "Sea star fish print stretch fabric",
         "brand": "unknown",
         "price": 4.0,
@@ -7,44 +19,32 @@
         "url": "https://www.vinted.co.uk/items/8147782727-sea-star-fish-print-stretch-fabric",
         "id": 8147782727,
         "timestamp": 1770751414,
-        "age_hours": 17.870942611694336,
-        "discount_pct": 73.33333333333333,
+        "age_hours": 23.70966324468454,
+        "discount_pct": 71.42857142857143,
         "link": "https://www.vinted.co.uk/items/8147782727-sea-star-fish-print-stretch-fabric"
     },
     {
-        "title": "Liverpool 2005 European champion shirt",
+        "title": "Liverpool top",
         "brand": "Liverpool",
-        "price": 12.0,
+        "price": 8.0,
         "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8148046181-liverpool-2005-european-champion-shirt",
-        "id": 8148046181,
-        "timestamp": 1770753426,
-        "age_hours": 17.312053722805448,
-        "discount_pct": 20.0,
-        "link": "https://www.vinted.co.uk/items/8148046181-liverpool-2005-european-champion-shirt"
+        "url": "https://www.vinted.co.uk/items/8151164494-liverpool-top",
+        "id": 8151164494,
+        "timestamp": 1770811327,
+        "age_hours": 7.067163244684537,
+        "discount_pct": 42.857142857142854,
+        "link": "https://www.vinted.co.uk/items/8151164494-liverpool-top"
     },
     {
-        "title": "Liverpool retro top",
+        "title": "Liverpool shirt",
         "brand": "Liverpool",
-        "price": 12.0,
+        "price": 10.0,
         "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8145535767-liverpool-retro-top",
-        "id": 8145535767,
-        "timestamp": 1770735551,
-        "age_hours": 22.277331500583223,
-        "discount_pct": 20.0,
-        "link": "https://www.vinted.co.uk/items/8145535767-liverpool-retro-top"
-    },
-    {
-        "title": "Liverpool 24/25 training top",
-        "brand": "Liverpool",
-        "price": 12.0,
-        "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8148982379-liverpool-2425-training-top",
-        "id": 8148982379,
-        "timestamp": 1770763384,
-        "age_hours": 14.545942611694336,
-        "discount_pct": 20.0,
-        "link": "https://www.vinted.co.uk/items/8148982379-liverpool-2425-training-top"
+        "url": "https://www.vinted.co.uk/items/8153782028-liverpool-shirt",
+        "id": 8153782028,
+        "timestamp": 1770828792,
+        "age_hours": 2.215774355795648,
+        "discount_pct": 28.57142857142857,
+        "link": "https://www.vinted.co.uk/items/8153782028-liverpool-shirt"
     }
 ]
