@@ -7,8 +7,8 @@
         "url": "https://www.vinted.co.uk/items/8147782727-sea-star-fish-print-stretch-fabric",
         "id": 8147782727,
         "timestamp": 1770751414,
-        "age_hours": 7.1813857117626405,
-        "discount_pct": 73.33333333333333,
+        "age_hours": 11.679365059534708,
+        "discount_pct": 73.02764666217128,
         "link": "https://www.vinted.co.uk/items/8147782727-sea-star-fish-print-stretch-fabric"
     },
     {
@@ -19,21 +19,21 @@
         "url": "https://www.vinted.co.uk/items/8146197884-liverpool-2223-top",
         "id": 8146197884,
         "timestamp": 1770740128,
-        "age_hours": 10.31638571176264,
-        "discount_pct": 66.66666666666666,
+        "age_hours": 14.814365059534708,
+        "discount_pct": 66.2845583277141,
         "link": "https://www.vinted.co.uk/items/8146197884-liverpool-2223-top"
     },
     {
-        "title": "Liverpool 2005 European champion shirt",
-        "brand": "Liverpool",
-        "price": 12.0,
+        "title": "Boston Red Sox jersey",
+        "brand": "MLB",
+        "price": 11.0,
         "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8148046181-liverpool-2005-european-champion-shirt",
-        "id": 8148046181,
-        "timestamp": 1770753426,
-        "age_hours": 6.622496822873751,
-        "discount_pct": 20.0,
-        "link": "https://www.vinted.co.uk/items/8148046181-liverpool-2005-european-champion-shirt"
+        "url": "https://www.vinted.co.uk/items/8142453167-boston-red-sox-jersey",
+        "id": 8142453167,
+        "timestamp": 1770710548,
+        "age_hours": 23.031031726201377,
+        "discount_pct": 25.826028320971005,
+        "link": "https://www.vinted.co.uk/items/8142453167-boston-red-sox-jersey"
     },
     {
         "title": "Liverpool retro top",
@@ -43,9 +43,21 @@
         "url": "https://www.vinted.co.uk/items/8145535767-liverpool-retro-top",
         "id": 8145535767,
         "timestamp": 1770735551,
-        "age_hours": 11.58777460065153,
-        "discount_pct": 20.0,
+        "age_hours": 16.085753948423598,
+        "discount_pct": 19.082939986513825,
         "link": "https://www.vinted.co.uk/items/8145535767-liverpool-retro-top"
+    },
+    {
+        "title": "Liverpool 2005 European champion shirt",
+        "brand": "Liverpool",
+        "price": 12.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8148046181-liverpool-2005-european-champion-shirt",
+        "id": 8148046181,
+        "timestamp": 1770753426,
+        "age_hours": 11.12047617064582,
+        "discount_pct": 19.082939986513825,
+        "link": "https://www.vinted.co.uk/items/8148046181-liverpool-2005-european-champion-shirt"
     },
     {
         "title": "liverpool jersey",
@@ -55,8 +67,8 @@
         "url": "https://www.vinted.co.uk/items/8148877268-liverpool-jersey",
         "id": 8148877268,
         "timestamp": 1770761491,
-        "age_hours": 4.382219045095973,
-        "discount_pct": 20.0,
+        "age_hours": 8.880198392868042,
+        "discount_pct": 19.082939986513825,
         "link": "https://www.vinted.co.uk/items/8148877268-liverpool-jersey"
     }
 ]
