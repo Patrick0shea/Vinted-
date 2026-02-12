@@ -1,39 +1,27 @@
 [
     {
-        "title": "Liverpool top",
+        "title": "Men\u2019s Liverpool away T shirt",
         "brand": "Liverpool",
-        "price": 1.5,
+        "price": 3.0,
         "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8158680858-liverpool-top",
-        "id": 8158680858,
-        "timestamp": 1770901627,
-        "age_hours": 0.10802869134479098,
-        "discount_pct": 90.0,
-        "link": "https://www.vinted.co.uk/items/8158680858-liverpool-top"
+        "url": "https://www.vinted.co.uk/items/8159409550-mens-liverpool-away-t-shirt",
+        "id": 8159409550,
+        "timestamp": 1770906820,
+        "age_hours": 4.533419327669674,
+        "discount_pct": 80.0,
+        "link": "https://www.vinted.co.uk/items/8159409550-mens-liverpool-away-t-shirt"
     },
     {
-        "title": "Shein Football Jersey - M",
-        "brand": "Shein",
-        "price": 1.5,
+        "title": "2x Tumbler Glasses",
+        "brand": "jersey zoo",
+        "price": 4.0,
         "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8152453791-shein-football-jersey-m",
-        "id": 8152453791,
-        "timestamp": 1770820133,
-        "age_hours": 22.745250913567013,
-        "discount_pct": 90.0,
-        "link": "https://www.vinted.co.uk/items/8152453791-shein-football-jersey-m"
-    },
-    {
-        "title": "Liverpool 25/26 Top",
-        "brand": "Liverpool",
-        "price": 8.0,
-        "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8158635367-liverpool-2526-top",
-        "id": 8158635367,
-        "timestamp": 1770901286,
-        "age_hours": 0.20275091356701322,
-        "discount_pct": 46.666666666666664,
-        "link": "https://www.vinted.co.uk/items/8158635367-liverpool-2526-top"
+        "url": "https://www.vinted.co.uk/items/8160580394-2x-tumbler-glasses",
+        "id": 8160580394,
+        "timestamp": 1770915354,
+        "age_hours": 2.1628637721141177,
+        "discount_pct": 73.33333333333333,
+        "link": "https://www.vinted.co.uk/items/8160580394-2x-tumbler-glasses"
     },
     {
         "title": "Liverpool top",
@@ -43,8 +31,68 @@
         "url": "https://www.vinted.co.uk/items/8156075132-liverpool-top",
         "id": 8156075132,
         "timestamp": 1770848168,
-        "age_hours": 14.957750913567013,
+        "age_hours": 20.825641549891895,
         "discount_pct": 33.33333333333333,
         "link": "https://www.vinted.co.uk/items/8156075132-liverpool-top"
+    },
+    {
+        "title": "Football Shirt",
+        "brand": "Liverpool",
+        "price": 10.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8160567524-football-shirt",
+        "id": 8160567524,
+        "timestamp": 1770915235,
+        "age_hours": 2.1959193276696736,
+        "discount_pct": 33.33333333333333,
+        "link": "https://www.vinted.co.uk/items/8160567524-football-shirt"
+    },
+    {
+        "title": "Liverpool home shirt men\u2019s size M",
+        "brand": "Liverpool",
+        "price": 10.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8160908124-liverpool-home-shirt-mens-size-m",
+        "id": 8160908124,
+        "timestamp": 1770920824,
+        "age_hours": 0.6434193276696735,
+        "discount_pct": 33.33333333333333,
+        "link": "https://www.vinted.co.uk/items/8160908124-liverpool-home-shirt-mens-size-m"
+    },
+    {
+        "title": "liverpool retro home jersey - size S",
+        "brand": "Liverpool",
+        "price": 10.39,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8155927214-liverpool-retro-home-jersey-size-s",
+        "id": 8155927214,
+        "timestamp": 1770846070,
+        "age_hours": 21.408419327669673,
+        "discount_pct": 30.73333333333333,
+        "link": "https://www.vinted.co.uk/items/8155927214-liverpool-retro-home-jersey-size-s"
+    },
+    {
+        "title": "Liverpool 25/26 jersey",
+        "brand": "KIT",
+        "price": 12.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8160656388-liverpool-2526-jersey",
+        "id": 8160656388,
+        "timestamp": 1770916117,
+        "age_hours": 1.9509193276696735,
+        "discount_pct": 20.0,
+        "link": "https://www.vinted.co.uk/items/8160656388-liverpool-2526-jersey"
+    },
+    {
+        "title": "Liverpool 3rd shirt 24/25",
+        "brand": "Liverpool",
+        "price": 12.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8155510280-liverpool-3rd-shirt-2425",
+        "id": 8155510280,
+        "timestamp": 1770841923,
+        "age_hours": 22.56036377211412,
+        "discount_pct": 20.0,
+        "link": "https://www.vinted.co.uk/items/8155510280-liverpool-3rd-shirt-2425"
     }
 ]
