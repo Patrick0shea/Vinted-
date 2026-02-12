@@ -1,1 +1,38 @@
-[]
+[
+    {
+        "title": "Liverpool top",
+        "brand": "Liverpool",
+        "price": 10.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8156075132-liverpool-top",
+        "id": 8156075132,
+        "timestamp": 1770848168,
+        "age_hours": 8.802483007642959,
+        "discount_pct": 28.57142857142857,
+        "link": "https://www.vinted.co.uk/items/8156075132-liverpool-top"
+    },
+    {
+        "title": "Liverpool shirt",
+        "brand": "Liverpool",
+        "price": 10.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8153782028-liverpool-shirt",
+        "id": 8153782028,
+        "timestamp": 1770828792,
+        "age_hours": 14.18470522986518,
+        "discount_pct": 28.57142857142857,
+        "link": "https://www.vinted.co.uk/items/8153782028-liverpool-shirt"
+    },
+    {
+        "title": "liverpool retro home jersey - size S",
+        "brand": "Liverpool",
+        "price": 10.39,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8155927214-liverpool-retro-home-jersey-size-s",
+        "id": 8155927214,
+        "timestamp": 1770846070,
+        "age_hours": 9.385260785420735,
+        "discount_pct": 25.785714285714285,
+        "link": "https://www.vinted.co.uk/items/8155927214-liverpool-retro-home-jersey-size-s"
+    }
+]
