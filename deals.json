@@ -1,17 +1,5 @@
 [
     {
-        "title": "Liverpool yellow tshirt",
-        "brand": "Liverpool",
-        "price": 5.0,
-        "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8162492868-liverpool-yellow-tshirt",
-        "id": 8162492868,
-        "timestamp": 1770935047,
-        "age_hours": 4.109071521891488,
-        "discount_pct": 75.0,
-        "link": "https://www.vinted.co.uk/items/8162492868-liverpool-yellow-tshirt"
-    },
-    {
         "title": "Diego jota football shirt",
         "brand": "Liverpool",
         "price": 15.0,
@@ -19,7 +7,7 @@
         "url": "https://www.vinted.co.uk/items/8161464584-diego-jota-football-shirt",
         "id": 8161464584,
         "timestamp": 1770924740,
-        "age_hours": 6.972127077447044,
+        "age_hours": 11.506803767085076,
         "discount_pct": 25.0,
         "link": "https://www.vinted.co.uk/items/8161464584-diego-jota-football-shirt"
     },
@@ -31,7 +19,7 @@
         "url": "https://www.vinted.co.uk/items/8160725020-msalah-shirt-liverpool",
         "id": 8160725020,
         "timestamp": 1770916967,
-        "age_hours": 9.13129374411371,
+        "age_hours": 13.665970433751742,
         "discount_pct": 25.0,
         "link": "https://www.vinted.co.uk/items/8160725020-msalah-shirt-liverpool"
     }
