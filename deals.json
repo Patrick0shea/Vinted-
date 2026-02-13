@@ -1,26 +1,62 @@
 [
     {
-        "title": "Black liverpool t shirt",
-        "brand": "Liverpool",
-        "price": 7.0,
-        "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8161324247-black-liverpool-t-shirt",
-        "id": 8161324247,
-        "timestamp": 1770923701,
-        "age_hours": 17.835931812789706,
-        "discount_pct": 53.333333333333336,
-        "link": "https://www.vinted.co.uk/items/8161324247-black-liverpool-t-shirt"
-    },
-    {
-        "title": "Liverpool FC",
+        "title": "Liverpool Jersey",
         "brand": "Liverpool",
         "price": 10.0,
         "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8163367816-liverpool-fc",
-        "id": 8163367816,
-        "timestamp": 1770973588,
-        "age_hours": 3.978431812789705,
-        "discount_pct": 33.33333333333333,
-        "link": "https://www.vinted.co.uk/items/8163367816-liverpool-fc"
+        "url": "https://www.vinted.co.uk/items/8165746763-liverpool-jersey",
+        "id": 8165746763,
+        "timestamp": 1770993124,
+        "age_hours": 4.368779230184026,
+        "discount_pct": 50.0,
+        "link": "https://www.vinted.co.uk/items/8165746763-liverpool-jersey"
+    },
+    {
+        "title": "Liverpool fc away top",
+        "brand": "Liverpool",
+        "price": 13.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8167137156-liverpool-fc-away-top",
+        "id": 8167137156,
+        "timestamp": 1771003642,
+        "age_hours": 1.4471125635173585,
+        "discount_pct": 35.0,
+        "link": "https://www.vinted.co.uk/items/8167137156-liverpool-fc-away-top"
+    },
+    {
+        "title": "Liverpool fc shirt",
+        "brand": "Liverpool",
+        "price": 13.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8167119876-liverpool-fc-shirt",
+        "id": 8167119876,
+        "timestamp": 1771003504,
+        "age_hours": 1.4854458968506918,
+        "discount_pct": 35.0,
+        "link": "https://www.vinted.co.uk/items/8167119876-liverpool-fc-shirt"
+    },
+    {
+        "title": "Liverpool fc top",
+        "brand": "Liverpool",
+        "price": 13.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8167158833-liverpool-fc-top",
+        "id": 8167158833,
+        "timestamp": 1771003814,
+        "age_hours": 1.3993347857395808,
+        "discount_pct": 35.0,
+        "link": "https://www.vinted.co.uk/items/8167158833-liverpool-fc-top"
+    },
+    {
+        "title": "Brand new Men\u2019s Liverpool top",
+        "brand": "Liverpool",
+        "price": 15.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8165889026-brand-new-mens-liverpool-top",
+        "id": 8165889026,
+        "timestamp": 1770994168,
+        "age_hours": 4.0787792301840256,
+        "discount_pct": 25.0,
+        "link": "https://www.vinted.co.uk/items/8165889026-brand-new-mens-liverpool-top"
     }
 ]
