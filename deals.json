@@ -1,5 +1,17 @@
 [
     {
+        "title": "Football top",
+        "brand": "Liverpool",
+        "price": 3.0,
+        "currency": "GBP",
+        "url": "https://www.vinted.co.uk/items/8170539095-football-top",
+        "id": 8170539095,
+        "timestamp": 1771066345,
+        "age_hours": 2.029268529613813,
+        "discount_pct": 80.0,
+        "link": "https://www.vinted.co.uk/items/8170539095-football-top"
+    },
+    {
         "title": "Liverpool Jersey",
         "brand": "Liverpool",
         "price": 10.0,
@@ -7,44 +19,20 @@
         "url": "https://www.vinted.co.uk/items/8165746763-liverpool-jersey",
         "id": 8165746763,
         "timestamp": 1770993124,
-        "age_hours": 16.299246902664503,
-        "discount_pct": 41.14184814596821,
+        "age_hours": 22.36843519628048,
+        "discount_pct": 33.33333333333333,
         "link": "https://www.vinted.co.uk/items/8165746763-liverpool-jersey"
     },
     {
-        "title": "Liverpool FC",
-        "brand": "Liverpool",
-        "price": 10.0,
-        "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8163367816-liverpool-fc",
-        "id": 8163367816,
-        "timestamp": 1770973588,
-        "age_hours": 21.72591356933117,
-        "discount_pct": 41.14184814596821,
-        "link": "https://www.vinted.co.uk/items/8163367816-liverpool-fc"
-    },
-    {
-        "title": "Liverpool 25/26 jersey",
+        "title": "Liverpool kit",
         "brand": "Liverpool",
         "price": 12.0,
         "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8169066318-liverpool-2526-jersey",
-        "id": 8169066318,
-        "timestamp": 1771028805,
-        "age_hours": 6.387858013775613,
-        "discount_pct": 29.370217775161855,
-        "link": "https://www.vinted.co.uk/items/8169066318-liverpool-2526-jersey"
-    },
-    {
-        "title": "Liverpool fc top",
-        "brand": "Liverpool",
-        "price": 13.0,
-        "currency": "GBP",
-        "url": "https://www.vinted.co.uk/items/8167158833-liverpool-fc-top",
-        "id": 8167158833,
-        "timestamp": 1771003814,
-        "age_hours": 13.329802458220058,
-        "discount_pct": 23.484402589758673,
-        "link": "https://www.vinted.co.uk/items/8167158833-liverpool-fc-top"
+        "url": "https://www.vinted.co.uk/items/8171114753-liverpool-kit",
+        "id": 8171114753,
+        "timestamp": 1771070208,
+        "age_hours": 0.9562129740582572,
+        "discount_pct": 20.0,
+        "link": "https://www.vinted.co.uk/items/8171114753-liverpool-kit"
     }
 ]
